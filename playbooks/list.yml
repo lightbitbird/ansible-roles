@@ -1,0 +1,19 @@
+---
+- hosts: vagrant
+  become: yes
+  tasks: 
+  #    - name: be sure httpd is latest 
+  #    yum: name=httpd
+
+  #  - name: be sure httpd is running and enabled
+  #    service: name=httpd state=restarted enabled=yes
+
+    - name: install epel
+      yum: name=https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm state=present
+
+    - name: install nginx
+      yum: name=nginx state=present
+
+    - name: be sure nginx is running
+      service: name=nginx state=started enabled=yes
+

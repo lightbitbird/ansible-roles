@@ -1,0 +1,6 @@
+[vagrant]
+#192.168.33.11 ansible_private_key_file=~/codes/study/devops/vm/centos7/.vagrant/machines/node1/virtualbox/private_key
+#192.168.33.12 ansible_private_key_file=~/codes/study/devops/vm/centos7/.vagrant/machines/node2/virtualbox/private_key
+192.168.33.11
+192.168.33.12
+
